@@ -1,0 +1,30 @@
+.caja1{
+    margin-top: 90px;
+    padding-top:20px ;
+    text-align: right;
+    color: white;
+}
+
+.nave{
+    position: fixed;
+    background-color:rgba(119, 0, 255, 0.925); ;
+}
+.mani{
+    height: 50vh;
+    width: 100%;
+    background-image: url(/IMG/Cerro-Verde.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center center;
+}
+
+.caja2{
+    padding-top: 25px;
+}
+.textjust{
+    text-align: justify;
+}
+
+.flot{
+    float: inline-start;
+}

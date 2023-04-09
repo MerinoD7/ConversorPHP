@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration:none;
+}
+
+li{
+    list-style: none;
+}
+
+main{
+    
+
+    position: relative;
+
+}
+.nuevo{
+    padding: 0%;
+    margin: 0;
+}
+
+.bg-img{
+    
+    opacity: 0;
+    transform: scale(0);
+    animation: grow 2s ease-out 0.8 forwards;
+}
+
+.bg-img img{
+    padding: 0%;
+    width: 100%;
+}
+
+
+
+.namenu{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3.5rem;
+    opacity: 0;
+    transform: scale(0);
+    animation: grow 2s ease-out 0.8 forwards;
+}
+.namenu ul{
+    display: flex;
+    justify-content: center;
+
+}
+
+.namenu ul li a{
+    margin-left: 3rem;
+    font-size: 1.2rem;
+    color: white;
+    text-transform: capitalize;
+    transition: all 0.3s;
+    text-decoration: none;
+    font-size: 175%;
+
+}
+
+.namenu ul li a:hover{
+    color: white;
+    transition:1s;
+    background-color: rgba(46, 136, 240, 0.315);
+    border-style: solid;
+    border-color: white;
+    padding: 5%;
+    text-decoration: none;
+    
+}
+
+#logofondo{
+    width: 8%;
+}
+
+
+.text{
+    margin-top:50px ;
+    margin-right:10px ;
+    position: absolute;
+    top: 35%;
+    padding: 0 3.5rem;
+    color: white;
+}
+
+.text h1{
+    opacity: 0;
+    animation: animate 3s ease forwards;
+    font-weight: 500;
+
+}
+
+.text h1 span{
+    background-color: black;
+    padding: 0.3rem 1rem;
+    display:flexbox;
+    opacity: 0;
+    transform: scale(0);
+    animation: grow 2s ease-out 0.8 forwards;
+    
+}
+
+.para{
+    padding: 0;
+    width: 28rem;
+    font-size: 1.2rem;
+    right: 10%;
+    transform: translate(50px);
+    margin-right: 25px;
+    opacity: 0;
+    
+    animation: animated2 2s ease 2s forwards;
+}
+
+.Line{
+    width: 100%;
+    height: 0.01rem;
+    position: absolute;
+    background-color: white;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: grow2 2s ease 2s forwards;
+
+}
+.spa{
+    
+    font-size: 150%;
+    
+}
+
+.aaa{
+    margin-right: 390px;
+    color: white;
+    text-decoration: none;
+    font-size: 120%;
+}
+
+.bton{
+    justify-content: center;
+    align-items: center;
+    margin-top: 225px;
+    margin-left: 550px;
+    opacity: 0;
+    transform: scale(0);
+    animation: grow 2s ease-out 0.8 forwards;
+    
+}
+
+@keyframes grow2{
+    100%{
+        width: 92%;
+    }
+}
+
+@keyframes grow{
+    10%{
+        transform: scale(0.1) ;
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1) ;
+        opacity: 1;
+    }
+}
+@keyframes animate{
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes animated2{
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes animated3{
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 952px){
+    .namenu, ul, .respo{
+        padding-left: 20px;
+    }
+
+    
+    .namenu ul li a{
+        font-size: 20px;
+    }
+    .text, .spa{
+        margin-left: 10px;
+        position: fixed;
+        font-size: 10px;
+        text-align: center;
+        transition: all .5s;
+    }
+}
+
+@media (max-width: 858px){
+    
+    #logofondo{
+        margin-left: 35px;
+    }
+    .namenu{
+        margin-left: 90px;
+    }
+
+    
+    .namenu ul li a{
+        font-size: auto;
+    }
+    .text, .spa{
+        margin-left: 10px;
+        position: fixed;
+        font-size: 10px;
+        text-align: center;
+        transition: all .5s;
+    }
+    .logo{
+        margin-left: 0px;
+    }
+    .aaa{
+        margin-right: 0px;
+    }
+}
+    @media (max-width: 600px){
+    
+        .namenu, ul, .respo{
+            
+            margin-left: 50px;
+            position: absolute;
+            font-size: 90%;
+            text-align: center;
+            transition: all .5s;
+            margin-right: 0px;
+        }
+        .namenu ul li{
+            
+            margin: 90px;
+            
+        }
+        .namenu ul li a{
+            font-size: 12px;
+            padding: 0;
+            margin: 0;
+           
+        }
+            
+            .text{
+                margin-left: 10px;
+                float: inline-end;
+                padding: 0;
+                font-size: 90px;
+                text-align: center;
+                transition: all .5s;
+                width: 0%;
+            }
+            
+            .spa{
+                margin-left: 10px;
+                text-align: center;
+                transition: all .5s;
+                
+            }
+            .aaa{
+                margin-right: 10px;
+                
+            }
+            .textpara{
+                position: absolute;
+                font-size: 50px;
+                padding: 0 3.5rem;
+                color: white;
+            }
+            
+    }
+
